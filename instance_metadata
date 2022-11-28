@@ -1,0 +1,11 @@
+#write code that will query the meta data of an instance within AWS or Azure or GCP and provide a json formatted output.
+import boto3
+region = 'ap-south-1'
+ec2 = boto3.client('ec2', region_name=region)
+
+def lambda_handler(event, context):
+    instance_ids = []
+    response = ec2.describe_instances()
+    instances_full_details = response['Reservations']
+    for instance_detail in instances_full_details:
+        metadata = instance_detail['Instances'][0]['MetadataOptions']
