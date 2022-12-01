@@ -1,3 +1,6 @@
 # test-challenge
 
-![image](https://user-images.githubusercontent.com/71487771/204270699-824d9fe7-0714-46c0-a150-e5d7be528880.png)
+public subnet: NAT gateway, webserver and bastion host
+
+![image](https://user-images.githubusercontent.com/71487771/204969191-030d85b7-ff03-41dc-b365-f8bc9d1ec826.png)
+
